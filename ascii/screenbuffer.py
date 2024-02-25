@@ -92,6 +92,10 @@ def put(index, value):
     screen_buffer[index] = value
 
 
+def put_block(column, row, color, flags):
+    put(column + row * CELL_COLUMNS, 128 + color * 16 + flags)
+
+
 def write(index, text):
     for char in text:
         put(index, CHARACTER_TABLE[char])
