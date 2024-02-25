@@ -136,6 +136,7 @@ DOOR_RIGHT = [
     (26, 12, 0, 10),
 ]
 
+
 def update():
     for cell in FRAME:
         screenbuffer.put_block(cell[0], cell[1], cell[2], cell[3])
